@@ -1,19 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @entry.name %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @entry.body %>
-</p>
-
-<p>
-  <strong>作成日時</strong>
-  <%= @entry.created_at %>
-</p>
+<%= render 'attribute' %>
 
 <%= link_to 'Edit', edit_entry_path(@entry) %> |
 <%= link_to 'Back', entries_path %>
