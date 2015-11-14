@@ -1,14 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @entry.name %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @entry.body %>
-</p>
+<%= render 'attribute' %>
 
 <%= link_to 'Edit', edit_entry_path(@entry) %> |
 <%= link_to 'Back', entries_path %>
